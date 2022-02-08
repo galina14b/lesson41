@@ -1,0 +1,114 @@
+body {
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.grid-container {
+    margin: 50px auto;
+    display: grid;
+    grid-gap: 54px;
+    grid-template-columns: 460px 460px 460px;
+    grid-template-rows: 775px 577px;
+}
+
+.item1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-image: url("img/1.jpg.png");
+}
+
+.item2 {
+    display: grid;
+    grid-template-rows: 360px 360px;
+    grid-template-columns: 460px;
+    gap: 52px;
+}
+
+.item2-1 {
+    background-image: url("img/2.jpg.png");
+}
+
+.item2-2 {
+    background-image: url("img/3.jpg.png");
+}
+
+.item3 {
+    background-image: url("img/4.jpg.png");
+}
+
+.item4 {
+    background-image: url("img/5.jpg.png");
+}
+
+.item5 {
+    background-image: url("img/6.jpg.png");
+}
+
+.item1:hover, .item2-1:hover, .item2-2:hover, .item3:hover, .item4:hover, .item5:hover{
+    border: solid 3px black;
+    transition: 1.5s;
+}
+
+/*================================================================================================*/
+@font-face {
+    font-family: "Hans-Kendrick";
+    src: url("fonts/Hans-Kendrick/NeueHansKendrick-Regular.ttf") format("truetype");
+}
+
+body {
+    font-family: Hans-Kendrick, sans-serif;
+    background-color: #e2e7ec;
+}
+
+.grid-block {
+    display: grid;
+    grid-template-columns: repeat(3, 360px);
+    grid-template-rows: repeat(2, 536px);
+    gap: 20px;
+    max-width: 1120px;
+    margin: 100px auto;
+}
+
+.grid-block > div {
+    background-color: white;
+}
+
+.item-1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-image: url("img/layout2/01.png");
+    z-index: -2;
+}
+
+.item-1__info-block {
+    position: relative;
+    left: 42px;
+    top: 370px;
+    color: white;
+    text-transform: uppercase;
+    max-width: 458px;
+}
+
+.item-1__title {
+    font-style: normal;
+}
+
+.item-1__img {
+    position: relative;
+    bottom: 482px;
+    left: -42px;
+    z-index: -1;
+}
+
+.info-block {
+    margin: 20px 40px;
+    text-transform: uppercase;
+}
+
+.title {
+    font-size: 22px;
+}
+
+.date {
+    color: #818181;
+}
